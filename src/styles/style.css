@@ -4,13 +4,16 @@
     --cor-primaria: #0a7cff;
     --cor-secundaria: #007cc2;
     --cor-icon: #0a7cff;
-    --cor-branca: #f1f1f1;
+    --cor-branca: #f3f3f4;
     --cor-cinza: rgb(190, 190, 190);
+    --cor-preta: rgb(27, 27, 27);
     --font-estilo: 'Roboto', sans-serif;
 }
 
 body{
     font-family: var(--font-estilo);
+    background-color: var(--cor-branca);
+    color: var(--cor-preta);
 }
 
 /* menu */
@@ -21,7 +24,7 @@ body{
 .menu{
     display: flex;
     flex-direction: row;
-    padding: 10px 0px;
+    padding: 20px 0px;
 }
 
 .link{
@@ -36,10 +39,29 @@ body{
 
 /* principal */
 .principal{
-    height: 100%;
-    width: 100%;
+    display: flex;
+    background-color: var(--cor-preta);
+    padding: 3rem 15rem;
 }
 
 .titulo-principal{
     font-size: 3rem;
+    text-align: center;
+    align-items: center;
+    margin: auto auto;
+    font-weight: 100;
+    color: var(--cor-branca);
+}
+
+.servico-digital{
+    height: 300px;
+    background: linear-gradient(0deg, #f3f3f4 0%, rgba(27,27,27,1) 100%);
+}
+
+#servico-digital{
+    font-size: 2rem;
+    text-align: center;
+    padding: 10rem;
+    color: var(--cor-preta);
+    font-weight: 300;
 }
