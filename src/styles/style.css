@@ -139,7 +139,7 @@ body{
 @media screen and (max-width: 800px) {
     /* menu */
     .link{
-        padding: 7px;
+        padding: 2px;
         width: 100%;
     }
 
