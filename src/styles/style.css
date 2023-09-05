@@ -60,7 +60,7 @@ body{
     width: 100%;
 }
 
-#servico-digital, #orientacao{
+#servico-digital, #orientacao, #licitacao{
     font-size: 3rem;
     text-align: center;
     padding-top: 4rem;
@@ -124,3 +124,59 @@ body{
 .link-orientacao:hover{
     color: var(--cor-branca);
 }
+
+/* licitações */
+
+.quadros-licitacao{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    margin: 0 10rem 10rem 10rem;
+}
+
+/* responsividade */
+
+@media screen and (max-width: 800px) {
+    /* menu */
+    .link{
+        padding: 7px;
+        width: 100%;
+    }
+
+    /* principal */
+    .principal{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        padding: 3rem 0rem;
+    }
+
+    .titulo-principal{
+        font-size: 2rem;
+        text-align: center;
+        align-items: center;
+    }
+
+    .principal img{
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    /* quadros */
+
+    .quadros-servico-digital{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        margin: 0 1rem 1rem 1rem;
+    }
+
+    .quadros-licitacao{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        margin: 0rem 0rem 1rem 1rem;
+    }
+  }
