@@ -16,12 +16,61 @@ body{
     color: var(--cor-preta);
 }
 
+/* menu-hamburguer */
+.menu-hamburguer{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+#checkbox-menu{
+    position: absolute;
+    opacity: 0;
+}
+
+label{
+    cursor: pointer;
+    position: relative;
+    display: block;
+    height: 23px;
+    width: 30px;
+}
+
+label span{
+    position: absolute;
+    display: block;
+    height: 3px;
+    width: 100%;
+    border-radius: 30px;
+    background-color: var(--cor-branca);
+    transition: 0.25s ease-in-out;
+}
+
+label span:nth-child(1){
+    top: 0;
+}
+
+label span:nth-child(2){
+    top: 8px;
+}
+
+label span:nth-child(3){
+    top: 16px;
+}
+
+.menu-mobile{
+    display: none;
+
+}
+
 /* menu */
 .navegador{
     background-color: var(--cor-secundaria);
 }
 
-.menu{
+.menu-navegador{
     display: flex;
     flex-direction: row;
     padding: 20px 0px;
@@ -40,22 +89,25 @@ body{
 /* principal */
 .principal{
     display: flex;
-    background-color: var(--cor-preta);
+    background-image: url("sala-do-empreendedor.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     padding: 3rem 15rem;
 }
 
 .titulo-principal{
-    font-size: 4rem;
+    font-size: 4.5rem;
     text-align: center;
     align-items: center;
     margin: auto auto;
     font-weight: 100;
     color: var(--cor-branca);
+    text-shadow: var(--cor-preta) 2px 3px 2px;
 }
 
 .servico-digital{
     height: 300px;
-    background: linear-gradient(0deg, #f3f3f4 0%, rgba(27,27,27,1) 100%);
     display:inline-block;
     width: 100%;
 }
@@ -92,6 +144,12 @@ body{
 
 /* orientacao */
 
+#orientacao{
+    height: 11rem;
+    margin: 0px;
+    padding-top: 0px;
+}
+
 .menu-orientacao{
     text-align: center;
     margin: auto;
@@ -106,7 +164,7 @@ body{
     border-radius: 25px;
     width: 25%;
     justify-content: center;
-    padding: 15px 50px;
+    padding: 20px 50px;
     margin: 1rem 0rem;
 }
 
@@ -138,6 +196,31 @@ body{
 
 @media screen and (max-width: 800px) {
     /* menu */
+
+    /* mobile */
+
+    .lista-navegador{
+        display: none;
+    }
+
+    .menu-navegador{
+        display: none;
+    }
+
+    #checkbox-menu{
+        display: none;
+    }
+
+    .menu-hamburguer{
+        display: block;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    .abrir{
+        display: block;
+    }
+
     .link{
         padding: 2px;
         width: 100%;
