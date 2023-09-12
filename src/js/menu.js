@@ -1,13 +1,11 @@
-const menuHamburguer = document.getElementById('menu-hamburguer');
-
-menuHamburguer.addEventListener('click',mostrar());
-
-function mostrar(){
-    let menuMobile = document.getElementById('menu-hamburguer');
-    if (menuMobile.classList.contains('abrir')){
+function mostrar() {
+    let menuMobile = document.querySelector('.menu-mobile');
+    if (menuMobile.classList.contains('abrir')) {
         menuMobile.classList.remove('abrir');
-    }else{
-        menuMobile.classList.add('abrir')
+    } else {
+        menuMobile.classList.add('abrir');
     }
 }
 
+let botao = document.getElementById('menu-botao')
+botao.addEventListener('click', mostrar);
