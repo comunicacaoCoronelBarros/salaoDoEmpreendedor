@@ -56,22 +56,12 @@ body{
 /* principal */
 .principal{
     display: flex;
-    background-image: url("sala-do-empreendedor.jpeg");
+    background-image: url("sala\ do\ empreendedor\ fundo.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     padding: 3rem 15rem;
     filter: opacity(0.9);
-}
-
-.titulo-principal{
-    font-size: 4.5rem;
-    text-align: center;
-    align-items: center;
-    margin: auto auto;
-    font-weight: 100;
-    color: var(--cor-branca);
-    text-shadow: var(--cor-preta) 2px 3px 2px;
 }
 
 .servico-digital{
@@ -205,19 +195,6 @@ body{
         padding: 3rem 0rem;
     }
 
-    #titulo-principal{
-        font-size: 3rem;
-        text-align: center;
-        align-items: center;
-        height: 100px;
-        justify-content: center;
-        font-weight: 300;
-    }
-
-    .principal img{
-        display: none;
-    }
-
     /* ao longo */
 
     #orientacao{
@@ -240,4 +217,12 @@ body{
         grid-template-rows: repeat(3, 1fr);
         margin: 0rem 0rem 1rem 1rem;
     }
+  }
+
+  @media screen and (max-width: 950px){ 
+    .principal img{
+        display: block;
+        width: 70%;
+    }
+
   }
