@@ -70,7 +70,7 @@ body{
     width: 100%;
 }
 
-#servico-digital, #orientacao, #licitacao{
+#servico-digital, #orientacao, #licitacao,#appsMEI{
     font-size: 3rem;
     text-align: center;
     padding-top: 4rem;
@@ -155,6 +155,29 @@ body{
     margin: 0 10rem 10rem 10rem;
 }
 
+/* loja */
+
+.section-appsMEI{
+    display: flex;
+    flex-direction: column;
+} */
+
+#appsMEI{
+    margin-bottom: 0;
+}
+
+.apps{
+    align-items: center;
+    display: flex;
+    margin: 0 auto;
+}
+
+.store{
+    margin: 0 4rem 4rem auto;
+    align-items: center;
+    height: 80px;
+}
+
 /* responsividade */
 
 @media screen and (max-width: 800px){ 
@@ -212,7 +235,7 @@ body{
     .quadros-servico-digital{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(6, 1fr);
+        grid-template-rows: repeat(5, 1fr);
         margin: 0 1rem 1rem 1rem;
     }
 
@@ -230,4 +253,11 @@ body{
         width: 70%;
     }
 
+    .apps{
+        flex-direction: column;
+    }
+
+    #appsMEI{
+        height: 10rem;
+    }
   }
