@@ -94,6 +94,11 @@ body{
     object-fit: cover;
 }
 
+.inativo{
+    filter: grayscale(1);
+    filter: blur(3px);
+}
+
 .quadros img:hover{
     -moz-transform: scale(1.1);
     -webkit-transform: scale(1.1);
