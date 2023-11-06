@@ -203,6 +203,14 @@ body{
     text-decoration: none;
 }
 
+.rodape-paragrafo{
+    text-decoration: none;
+    color: #f3f3f4;
+    font-size: 0.85rem;
+    margin-top: 30px;
+}
+
+
 /* responsividade */
 
 @media screen and (max-width: 800px){ 
@@ -279,6 +287,13 @@ body{
     }
 
     .numero-wpp{
+        margin-top: 30px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .rodape-paragrafo{
         margin-top: 30px;
     }
 
