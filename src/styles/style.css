@@ -178,6 +178,31 @@ body{
     height: 80px;
 }
 
+/* rodapé */
+
+.rodape{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #007cc2;
+    padding: 50px;
+}
+
+.logo-wpp-img{
+    width: 100px;
+}
+
+.numero-wpp{
+    margin-left: 30px;
+    color: #f3f3f4;
+    font-size: 1.5rem;
+}
+
+.numero-wpp a {
+    color: #f3f3f4;
+    text-decoration: none;
+}
+
 /* responsividade */
 
 @media screen and (max-width: 800px){ 
@@ -245,6 +270,18 @@ body{
         grid-template-rows: repeat(3, 1fr);
         margin: 0rem 0rem 1rem 1rem;
     }
+
+    /* rodape */
+
+    .rodape{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .numero-wpp{
+        margin-top: 30px;
+    }
+
   }
 
   @media screen and (max-width: 950px){ 
